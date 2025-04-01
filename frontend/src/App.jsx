@@ -33,8 +33,8 @@ function App() {
         setReview(JSON.stringify(responseData, null, 2));
     }
 
-    console.log(responseData);
-    console.log(response.data);
+    // console.log(responseData);
+    // console.log(response.data);
 }
 
   return (
