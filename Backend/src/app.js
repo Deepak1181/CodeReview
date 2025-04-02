@@ -1,37 +1,6 @@
 
 
 
-
-
-
-
-// const express = require("express");
-// const aiRoutes = require("./routes/ai.routes");
-
-// const app = express();
-
-// // Add JSON parsing middleware
-// app.use(express.json()); // This is required to read req.body
-
-// app.get("/", (req, res) => {
-//   res.send("Hello User");
-// });
-
-// // ✅ Use AI routes
-// app.use("/ai", aiRoutes);
-
-// module.exports = app;
-
-
-
-
-
-
-
-
-
-
-
 const express = require("express");
 const cors = require("cors"); 
 const aiRoutes = require("./routes/ai.routes");
@@ -48,7 +17,7 @@ app.get("/", (req, res) => {
   res.send("Hello User");
 });
 
-// ✅ Use AI routes
+
 app.use("/ai", aiRoutes);
 
 module.exports = app;
