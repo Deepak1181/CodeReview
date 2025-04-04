@@ -19,7 +19,10 @@ function App() {
   }, [])
 
   async function reviewCode() {
-    const response = await axios.post('https://code-review-dun.vercel.app/ai/get-review', { code });
+    // https://code-review-dun.vercel.app
+    // http://localhost:3000
+    // https://backend-koti4gu0b-dkp041297s-projects.vercel.app/
+    const response = await axios.post('https://backend-koti4gu0b-dkp041297s-projects.vercel.app/ai/get-review', { code });
 
     // Ensure response data is a string before setting it in state
     // setReview(typeof response.data === "string" ? response.data : JSON.stringify(response.data, null, 2));
