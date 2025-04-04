@@ -10,7 +10,7 @@ const app = express();
 
 // app.use(cors({ origin: "http://localhost:5173" }));
 app.use(cors({
-  origin: "*", // Temporarily allow all origins (test first)
+  origin: "https://frontend-i89fondap-dkp041297s-projects.vercel.app/", // Temporarily allow all origins (test first)
   methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
   allowedHeaders: ["Content-Type", "Authorization"]
 }));
