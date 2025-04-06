@@ -11,7 +11,7 @@
 require("dotenv").config();
 const { GoogleGenAI } = require("@google/genai");
 
-// const ai = new GoogleGenAI({ apiKey: process.env.GOOGLE_GEMINI_KEY });
+//const ai = new GoogleGenAI({ apiKey: process.env.GOOGLE_GEMINI_KEY });
 if (!process.env.GOOGLE_GEMINI_KEY) {
   throw new Error("Missing GOOGLE_GEMINI_KEY in environment variables.");
 }

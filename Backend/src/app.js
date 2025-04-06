@@ -10,12 +10,12 @@ const app = express();
 
 // app.use(cors({ origin: "http://localhost:5173" }));
 app.use(cors({
-  origin: "https://frontend-i89fondap-dkp041297s-projects.vercel.app/", // Temporarily allow all origins (test first)
+  origin: ["*"], 
   methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
   allowedHeaders: ["Content-Type", "Authorization"]
 }));
 
-// app.use(cors()); // Allow all origins (for development)
+// app.use(cors()); 
 
 app.use(express.json()); // JSON parsing middleware
 

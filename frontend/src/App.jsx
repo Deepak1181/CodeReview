@@ -20,9 +20,10 @@ function App() {
 
   async function reviewCode() {
     // https://code-review-dun.vercel.app
+    // https://backend-omega-indol-93.vercel.app/
     // http://localhost:3000
     // https://backend-koti4gu0b-dkp041297s-projects.vercel.app/
-    const response = await axios.post('https://backend-koti4gu0b-dkp041297s-projects.vercel.app/ai/get-review', { code });
+    const response = await axios.post('https://backend-omega-indol-93.vercel.app/ai/get-review', { code });
 
     // Ensure response data is a string before setting it in state
     // setReview(typeof response.data === "string" ? response.data : JSON.stringify(response.data, null, 2));
@@ -36,8 +37,8 @@ function App() {
         setReview(JSON.stringify(responseData, null, 2));
     }
 
-    console.log(responseData);
-    console.log(response.data);
+    // console.log(responseData);
+    console.log(response.data,"data");
 }
 
   return (
