@@ -4,9 +4,9 @@ const aiService = require("../services/ai.service")
 
 module.exports.getReview = async (req, res) => {
     try {
-      console.log("Received body:", req.body); // Debugging
+      console.log("Received body:", req.body); 
   
-      const { code } = req.body; // ✅ Correct way
+      const { code } = req.body; 
   
       if (!code) {
         return res.status(400).json({ error: "Prompt or code is required" });

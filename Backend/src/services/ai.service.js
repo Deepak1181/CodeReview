@@ -19,7 +19,7 @@ if (!process.env.GOOGLE_GEMINI_KEY) {
 const ai = new GoogleGenAI({ apiKey: process.env.GOOGLE_GEMINI_KEY });
 const generateResponse = async (prompt) => {
   try {
-    console.log("Sending request to AI with prompt:", prompt);
+    // console.log("Sending request to AI with prompt:", prompt);
 
     const response = await ai.models.generateContent({
       model: "gemini-2.0-flash",
