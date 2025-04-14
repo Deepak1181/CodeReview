@@ -22,7 +22,7 @@ function App() {
   
     // http://localhost:3000
     // https://backend-koti4gu0b-dkp041297s-projects.vercel.app/
-    const response = await axios.post('http://localhost:3000/ai/get-review', { code });
+    const response = await axios.post('https://codereview-1-nf6n.onrender.com/ai/get-review', { code });
 
     // Ensure response data is a string before setting it in state
     // setReview(typeof response.data === "string" ? response.data : JSON.stringify(response.data, null, 2));
