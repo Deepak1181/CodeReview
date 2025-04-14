@@ -1,2 +1,2 @@
-My backend URL is https://backend-omega-indol-93.vercel.app
+My backend URL is https://codereview-1-nf6n.onrender.com/ai/get-review
 i am using  google gemini  api to create this 
